@@ -110,8 +110,10 @@ header .menu li a:hover{
     padding-left: 20%;
 }
 
+/*PROYECTOS*/
 #card-proyectos {
     width: 80%;
+    height:fit-content;
     margin: auto;
     margin-top: 4em;
     padding: 2rem;
@@ -164,8 +166,8 @@ header .menu li a:hover{
 /*hoover img*/
 #card-proyectos .hovereffect {
   width: 100%;
-  height: 40%;  
-  float:left;
+  
+  
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -198,6 +200,7 @@ header .menu li a:hover{
 }
 
 .hovereffect img {
+    height: 600px;
   display: block;
   position: relative;
   -webkit-transition: all 0.35s;
@@ -223,6 +226,7 @@ header .menu li a:hover{
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0,-100%,0);
   transform: translate3d(0,-100%,0);
+  
 }
 
 .hovereffect a, .hovereffect p {
