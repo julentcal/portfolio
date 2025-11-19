@@ -113,7 +113,6 @@ header .menu li a:hover{
 /*PROYECTOS*/
 #card-proyectos {
     width: 80%;
-    height:fit-content;
     margin: auto;
     margin-top: 4em;
     padding: 2rem;
@@ -166,13 +165,10 @@ header .menu li a:hover{
 /*hoover img*/
 #card-proyectos .hovereffect {
   width: 100%;
-  
-  
   overflow: hidden;
   position: relative;
   text-align: center;
   cursor:auto;
-  border-radius: 8%;
 }
 
 .hovereffect .overlay {
@@ -180,7 +176,6 @@ header .menu li a:hover{
   overflow: hidden;
   width: 70%;
   height: 80%;
-  left: 10%;
   top: 10%;
   border-bottom: 1px solid #FFF;
   border-top: 1px solid #FFF;
@@ -200,8 +195,8 @@ header .menu li a:hover{
 }
 
 .hovereffect img {
-    height: 600px;
-  display: block;
+    height: 40rem;
+  grid-area: auto;
   position: relative;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
