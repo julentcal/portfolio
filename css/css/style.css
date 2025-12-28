@@ -1,0 +1,382 @@
+/* IMPORTS Y VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+:root{
+    --text : rgb(54, 69, 79); 
+    --primary-color: #a5bed1;
+    --secondary-color: #0F456E;
+    --third-color: #ea2ebe; 
+    --background: #ECEAE0;
+    --font-main: 'Roboto', sans-serif;
+}
+
+/*  ESTILOS GLOBALES */
+*{
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    scroll-behavior: smooth; 
+}
+
+body{
+    margin: 0;
+    background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--text);
+    margin: 0.5em 0;
+}
+
+/* HEADER Y MENÚ */
+header{
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+
+}
+
+header .menu{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    padding: 0.6rem 2rem;
+    border: var(--text) 1.5px solid;
+    border-radius: 20px;
+    align-items: center;    
+    margin: 0;
+}
+
+header .menu li a{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+header .menu li a:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+/* INTRODUCCIÓN */
+.intro{
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+        background-color: white;
+}
+
+.intro h1{
+    font-size: 4rem; 
+    text-shadow: 1px 1px 2px var(--secondary-color);
+}
+
+.intro .roles{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro img{
+    width: 280px;
+    height: 350px;
+    border-radius: 20%;
+    object-fit: cover;
+    opacity: 70%;
+    transition: opacity 0.5s, transform 0.5s;
+    box-shadow: 5px 5px 0px var(--primary-color); 
+}
+
+.intro img:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* BOTONES */
+.cta-container {
+    grid-column: 1 / -1; 
+    margin-top: 20px;
+}
+
+.btn-contact, .btn-cv {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-contact {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-cv {
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.btn-contact:hover, .btn-cv:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* SOBRE MÍ */
+#card-aboutme{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+#card-aboutme h2 {
+  grid-column: 1 / -1; 
+  text-align: center; 
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.grids {
+  background-color: var(--primary-color);
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.grids:hover {
+    transform: translateY(-5px);
+}
+
+.grids h3 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+}
+
+/* Animaciones Keyframes */
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.grids {
+  animation-name: aparecer;
+  animation-duration: 0.8s; 
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+#grid-formacion { animation-delay: 0.2s; }
+#grid-experiencia { animation-delay: 0.5s; }
+
+/* HABILIDADES */
+#skills {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;  
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skill {
+    background-color: var(--background);
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    box-shadow: 3px 3px 0px var(--secondary-color);
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 0px var(--primary-color);
+}
+
+/* PROYECTOS */
+#card-proyectos {
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    background-color: var(--secondary-color);
+}
+
+#card-proyectos h2 {
+    color: var(--background);
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.hovereffect {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.hovereffect img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.hovereffect:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.4);
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+}
+
+.hovereffect h2, .hovereffect a {
+    color: white;
+    transform: translateY(20px);
+    transition: transform 0.4s;
+}
+
+.hovereffect a {
+    background-color: var(--third-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.hovereffect:hover h2, .hovereffect:hover a {
+    transform: translateY(0);
+}
+
+/* CONTACTO Y FOOTER */
+#card-contacto{
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+#card-contacto h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#grid-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#card-contacto img{
+    width: 50px;
+}
+
+
+#card-contacto .correo{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#card-contacto .correo:focus{
+    font-size: 1.75rem;
+    text-decoration: underline;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--background);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    
+    header .menu {
+        width: 90%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 1.5rem;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    
+    .intro h1 { font-size: 3rem; }
+    
+    .intro img {
+        width: 200px;
+        height: 200px; 
+        margin: 20px 0;
+    }
+
+    #card-aboutme {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustes generales */
+    .btn-primary, .btn-secondary {
+        display: block; 
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    #grid-contacto {
+        flex-direction: column;
+    }
+    
+    #card-contacto .correo {
+        font-size: 1.2rem;
+    }
+}

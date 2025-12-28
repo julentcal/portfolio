@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Julia EC</title>
-    <link rel="stylesheet" href="/css/img/styles.css">
-</head>
+    <link rel="stylesheet" href="/css/css/style.css">
+    </head>
 <body>
     <header>
         <ul class="menu">
@@ -16,59 +16,76 @@
     </header>
 
     <main>
-
-        <div class="intro">
+        <section class="intro">
             <h1>JULIA EC</h1>
-            <img src="/css/img/fotoPerfil.jpg">
-                <div class="roles">
-                    <h2 class="dev">DESARROLLADORA WEB JUNIOR </h2>
-                    <h2 class="data">ANALISTA DE DATOS + IA</h2>
-                </div>
+            <img src="/img/fotoPerfil.jpg" alt="Foto de perfil de Julia EC">
+            <div class="roles">
+                <h2 class="dev">DESARROLLADORA WEB</h2>
+                <h2 class="data">ANALISTA DE DATOS + IA</h2>
+            </div>
             
-        </div>
-        <section id="card-aboutme">
-            <h2>Sobre mí</h2>
-                <div id="grid-formacion" class="grids">
-                    <h3>Formación</h3>
-                        <h4>Desarrollo de Aplicaciones Web (DAW)</h4>
-                        <h4>Máster Data & Analytic & AI</h4>
-                        <h4>Máster Tecnologías en la Educación</h4>
-                        <h4>Grado en Educación Primaria (Inglés)</h4>
-                    </div>
-                <div id="grid-experiencia" class="grids">
-                    <h3>Experiencia</h3>
-                        <h4>Administrativa, RRSS</h4>
-                        <h4>Profesora inglés</h4>
-                        <h4>Profesora primaria</h4>
-                        <h4>Profesora robótica y programación</h4>
-                        <h4>Formadora cursos TIC</h4>
-                </div>
-                
+            <div class="cta-container">
+                <a href="#card-contacto" class="btn-contact">Contáctame</a>
+                <a href="/CV.pdf" target="_blank" class="btn-cv">Descargar CV</a>
             </div>
         </section>
-        <section id="card-proyectos" >
-            <h2>Proyectos</h2>
 
+        <section id="card-aboutme">
+            <h2>SOBRE MÍ</h2>
+            <div id="grid-formacion" class="grids">
+                <h3>FORMACIÓN</h3>
+                <h4>Desarrollo de Aplicaciones Web (DAW)</h4>
+                <h4>Máster Data & Analytic</h4>
+                <h4>Máster Inteligencia Artificial</h4>
+                <h4>Máster Tecnologías en la Educación</h4>
+                <h4>Grado en Educación Primaria (Inglés)</h4>
+            </div>
+            <div id="grid-experiencia" class="grids">
+                <h3>EXPERIENCIA</h3>
+                <h4>Administrativa, RRSS</h4>
+                <h4>Profesora inglés</h4>
+                <h4>Profesora primaria</h4>
+                <h4>Profesora robótica y programación</h4>
+                <h4>Formadora cursos TIC</h4>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>IT SKILLS</h2>
+            <div class="skills-container">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Power BI</span>
+            </div>
+        </section>
+
+        <section id="card-proyectos">
+            <h2>PROYECTOS</h2>
             <div class="hovereffect">
-                <img class="img-responsive" src="/css/img/webMardis.png" alt="Web Mardis" href="https://mardisbrand.vercel.app/">
+                <img class="img-responsive" src="/img/webMardis.png" alt="Vista previa del proyecto Mardis Brand">
                 <div class="overlay">
-                    <h2>PROYECTO</h2>
-                    <a href="mardisbrand.vercel.app">MARDIS BRAND</a>
+                    <a href="https://mardisbrand.vercel.app/" target="_blank">MARDIS BRAND</a>
                 </div>
             </div>
         </section>
 
         <section id="card-contacto">
-            <h2>Contacto</h2>
+            <h2>CONTACTO</h2>
             <div id="grid-contacto" class="gridc">
-            <img src="/css/img/sobrecorreo.png">
-            <a href="mailto:juliaentrenas@gmail.com" class="correo">juliaentrenas@gmail.com</a>
+                <i class="fa-regular fa-envelope fa-lg" style="color: #0F456E;"></i>
+                <a href="mailto:juliaentrenas@gmail.com" class="correo">juliaentrenas@gmail.com</a>
             </div>
         </section>
-
     </main>
+
+    <script src="https://kit.fontawesome.com/0908096c4e.js" crossorigin="anonymous"></script>
+
     <footer class="footer">
-        <p>&copy; JULIA ENTRENAS CALERO. Todos los derechos reservados.</p>
+        <p>&copy; 2024 JULIA ENTRENAS CALERO. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
