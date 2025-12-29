@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
 
 :root{
-    --text : rgb(54, 69, 79); 
+    --text :#0F456E; 
     --primary-color: #a5bed1;
     --secondary-color: #0F456E;
     --third-color: #ea2ebe; 
@@ -106,6 +106,7 @@ header .menu li a:hover{
 .cta-container {
     grid-column: 1 / -1; 
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .btn-contact, .btn-cv {
@@ -140,8 +141,11 @@ header .menu li a:hover{
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 80%;
-    margin: 4rem auto;
+    margin: 20px auto;
+    margin-bottom: 25px;
 }
+
+
 
 #card-aboutme h2 {
   grid-column: 1 / -1; 
@@ -183,11 +187,14 @@ header .menu li a:hover{
 #grid-formacion { animation-delay: 0.2s; }
 #grid-experiencia { animation-delay: 0.5s; }
 
+
+
 /* HABILIDADES */
 #skills {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
     background-color: white;  
+    
 }
 
 #skills h2 {
@@ -295,7 +302,7 @@ header .menu li a:hover{
 /* CONTACTO Y FOOTER */
 #card-contacto{
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     background-color: var(--primary-color);
     text-align: center;
 }
@@ -311,6 +318,7 @@ header .menu li a:hover{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    
 }
 
 #card-contacto img{
