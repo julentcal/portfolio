@@ -302,9 +302,10 @@ header .menu li a:hover{
 /* CONTACTO Y FOOTER */
 #card-contacto{
     width: 100%;
-    padding: 2rem 2rem;
+    padding: 2rem;
     background-color: var(--primary-color);
     text-align: center;
+    padding-top: 15px;
 }
 
 #card-contacto h2 {
